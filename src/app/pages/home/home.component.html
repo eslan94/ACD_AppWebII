@@ -1,0 +1,105 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{ imagenHome }}" alt="home" style="height: 400px" />
+    </div>
+    <div class="col-md-6 text-justify">
+      <br />
+      <h2 style="color: coral">
+        Servicio de impresión para la industria textil
+      </h2>
+      <br />
+      <h5>
+        Etiquetas textiles Quito Ecuador GIOVITEX es su proveedor profesional de
+        etiquetas personalizadas para ropa, etiquetas de tela y cintas
+        decorativas individuales.
+      </h5>
+      <h5>
+        Desde la simple etiqueta ropa con nombre para la identificación de
+        lavandería a la etiqueta textil profesional o cinta colorida impresa –
+        nos encontramos con todas sus necesidades.
+      </h5>
+      <h5>
+        Diseñe su etiqueta bordada personalizada y tome contacto con nostros.
+        Tejemos su etiqueta textil personalizada o imprimimos una amplia
+        variedad de cintas, con plazos de entrega breves y precios económicos.
+      </h5>
+    </div>
+  </div>
+  <br><br>
+  <div class="container text-center" style="width: 50%;">
+    <h1>Ofertas del mes</h1>
+    <br>
+    <div id="carousel" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div
+          *ngFor="let oferta of ofertas"
+          [class]="oferta.id == 1 ? 'carousel-item active' : 'carousel-item'"
+        >
+          <img
+            [src]="oferta.imagen"
+            class="d-block w-100"
+            [alt]="oferta"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+
+  <div class="container" style="width: 50%; height: 400px;">
+    <h1>Más Productos</h1>
+    <br>
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div
+          *ngFor="let producto of productos"
+          [class]="producto.id == 1 ? 'carousel-item active' : 'carousel-item'"
+        >
+          <img
+            [src]="producto.imagen"
+            class="d-block w-100"
+            [alt]="producto.nombre"
+          />
+          <h5>{{ producto.tipo }}</h5>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>

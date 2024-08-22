@@ -1,0 +1,52 @@
+[
+    { "id": 1,
+      "nombre": "Nylon",
+      "tipo": "Etiqueta",
+      "imagen": "imagenes/etiqueta_nylon.jpg"
+    },
+    { "id": 2, 
+      "nombre": "Gafetes", 
+      "tipo": "Accesorios",
+      "imagen": "imagenes/gafetes.jpg"
+    },
+    { "id": 3,
+      "nombre": "Bordados",
+      "tipo": "Etiqueta",
+      "imagen": "imagenes/etiqueta_bordados.jpg"
+    },
+    { "id": 4, 
+      "nombre": "Adhesivo", 
+      "tipo": "Etiqueta",
+      "imagen": "imagenes/etiqueta_adhesivo.jpg"
+    },
+    { "id": 5, 
+      "nombre": "Portagafetes", 
+      "tipo": "Accesorios",
+      "imagen": "imagenes/portagafetes.jpg"
+    },
+    { "id": 6, 
+      "nombre": "Hantag", 
+      "tipo": "Etiqueta",
+      "imagen": "imagenes/etiqueta_carton.jpg"
+    },
+    { "id": 7, 
+      "nombre": "Reata", 
+      "tipo": "Accesorios",
+      "imagen": "imagenes/reata.jpg"
+    },
+    { "id": 8, 
+      "nombre": "Elástico", 
+      "tipo": "Accesorios",
+      "imagen": "imagenes/elastico.jpg"
+    },
+    { "id": 9, 
+      "nombre": "Cuero", 
+      "tipo": "Etiqueta",
+      "imagen": "imagenes/etiqueta_cuero.jpg"
+    },
+    { "id": 10, 
+      "nombre": "Transfer", 
+      "tipo": "Accesorios",
+      "imagen": "imagenes/transfer.jpg"
+    }
+  ]

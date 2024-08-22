@@ -1,0 +1,11 @@
+<div class="d-flex flex-wrap container">
+  <div *ngFor="let producto of productos" class="card" style="width: 18rem; margin: 15px;">
+    <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre" />
+    <div class="card-body text-center">
+      <h5 class="card-title">{{producto.nombre}}</h5>
+      <a (click)="onClickProducto(producto)" class="btn btn-primary">Ver más</a>
+    </div>
+  </div>
+</div>
+
+
