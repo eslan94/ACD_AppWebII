@@ -1,4 +1,4 @@
-<div class="container-fluid text-center">
+<div class="container-fluid">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -9,12 +9,19 @@
         </li>
       </ol>
     </nav>
-  
-    <div class="card" style="width: 18rem">
-      <img [src]="producto?.imagen" class="card-img-top" [alt]="producto?.nombre" />
+  <div class="container text-center" style="width: 50%;">
+    <div class="card" style="width: 20rem">
+      <img
+        [src]="producto?.imagen"
+        class="card-img-top"
+        [alt]="producto?.nombre"
+      />
       <div class="card-body">
         <h5 class="card-title">{{ producto?.nombre }}</h5>
         <p class="card-text">Tipo: {{ producto?.tipo }}</p>
       </div>
     </div>
   </div>
+  <br><br>
+</div>
+

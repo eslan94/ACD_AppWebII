@@ -1,3 +1,21 @@
+<style>
+  .txt-home{
+    color: navy;
+  }
+  .custom-btn {
+    background-color: rgba(0, 123, 255, 0.7); /* Cambia el color de fondo y aplica transparencia */
+    border: none; /* Elimina el borde del botón */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    }
+    .custom-btn:hover {
+    background-color: rgba(0, 123, 255, 0.9); /* Color del botón al pasar el cursor */
+  }
+</style>
+
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -9,17 +27,17 @@
         Servicio de impresión para la industria textil
       </h2>
       <br />
-      <h5>
+      <h5 class="txt-home">
         Etiquetas textiles Quito Ecuador GIOVITEX es su proveedor profesional de
         etiquetas personalizadas para ropa, etiquetas de tela y cintas
         decorativas individuales.
       </h5>
-      <h5>
+      <h5 class="txt-home">
         Desde la simple etiqueta ropa con nombre para la identificación de
         lavandería a la etiqueta textil profesional o cinta colorida impresa –
         nos encontramos con todas sus necesidades.
       </h5>
-      <h5>
+      <h5 class="txt-home">
         Diseñe su etiqueta bordada personalizada y tome contacto con nostros.
         Tejemos su etiqueta textil personalizada o imprimimos una amplia
         variedad de cintas, con plazos de entrega breves y precios económicos.
@@ -65,7 +83,7 @@
   </div>
   <br>
 
-  <div class="container" style="width: 50%; height: 400px;">
+  <div class="container text-center" style="width: 50%">
     <h1>Más Productos</h1>
     <br>
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
@@ -78,8 +96,11 @@
             [src]="producto.imagen"
             class="d-block w-100"
             [alt]="producto.nombre"
+            
           />
-          <h5>{{ producto.tipo }}</h5>
+          <div class="carousel-caption d-flex flex-column justify-content-center">
+            <a (click)="onClickProducto(producto)" class="btn custom-btn">Ver producto</a>
+          </div>
         </div>
       </div>
       <button
@@ -102,4 +123,7 @@
       </button>
     </div>
   </div>
+  <br><br>
 </div>
+
+

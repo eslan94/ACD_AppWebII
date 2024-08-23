@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  imagenLogo: string = "imagenes/giovitex-ecuador-logotipo.jpg";
 
   paths: Path[] = [
     {path: '/home', nombre:'Home'},
